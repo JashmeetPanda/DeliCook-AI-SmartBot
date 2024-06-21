@@ -42,6 +42,15 @@ html::-webkit-scrollbar-thumb{
     padding: 2rem 9%;
 }
 
+.heading{
+    text-align: center;
+    font-size:3.5rem;
+    padding:1rem;
+    color: #ed9729;
+}
+
+
+
 .btn{
     display: inline-block;
     padding: .8rem 3rem ;
@@ -85,7 +94,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding:2rem 9%;
-    box-shadow: 0 2rem 4rem #ed9729;
+    box-shadow: 0 1rem 6rem #ed9729;
     position: fixed;
     top:0;left:0;right:0;
     z-index:1000 ;
@@ -98,7 +107,7 @@ body{
 .header .navbar a{
     margin-left: 2rem;
     font-size: 2rem;
-    color:#fff;
+    color:#ebcca4;
 }
 
 .header .navbar a:hover{
@@ -143,6 +152,103 @@ body{
     flex:1 1 40rem;
     padding: 6.5rem;
 }
+
+
+.heading .span{
+    text-align: center;
+    font-size:3.5rem;
+    padding:1rem;
+    color: #a8212e;
+
+}
+
+.recipes .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipes .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem #ed9729;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    background: #a8212e;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.recipes .box-container .box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:-100%; left:0;
+}
+
+.recipes .box-container .box .Time{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    background: black;
+    color: #ed9729;
+    font-size: 1.75rem;
+    padding: .5rem;
+    border-radius: .5rem;
+
+}
+
+.recipes .box-container .box h3{
+    font-size: 2.5rem;
+    color: bisque;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.recipes .box-container .box .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}
+
+.recipes .box-container .box .btn{
+    display: inline-block;
+    padding: .8rem 3rem ;
+    border: .2rem solid #ed9729;
+    color: bisque;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.recipes .box-container .box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0; right:0;
+    width: 0%;
+    height: 100%;
+    background:black;
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.recipes .box-container .box .btn:hover::before{
+    width: 100%;
+    left:0;
+}
+
+.recipes .box-container .box .btn:hover{
+    color:#ed9729;
+} 
 
 .home .image{
     flex:1 1 40rem;
