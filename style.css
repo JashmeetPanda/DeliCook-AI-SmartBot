@@ -42,13 +42,12 @@ html::-webkit-scrollbar-thumb{
     padding: 2rem 9%;
 }
 
-.heading{
-    text-align: center;
+.heading {
+    text-align:center;
     font-size:3.5rem;
     padding:1rem;
     color: #ed9729;
 }
-
 
 
 .btn{
@@ -107,7 +106,7 @@ body{
 .header .navbar a{
     margin-left: 2rem;
     font-size: 2rem;
-    color:#ebcca4;
+    color:#f2bf7c;
 }
 
 .header .navbar a:hover{
@@ -228,6 +227,7 @@ body{
     z-index: 0;
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-bottom: 0.75jrem;
 }
 
 .recipes .box-container .box .btn::before{
@@ -260,6 +260,38 @@ body{
     width: 120%;
     padding: 5rem;
     animation: float 2s linear infinite;
+}
+
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.steps .box{
+    flex: 1 1 0rem;
+    padding: 0rem;
+    text-align: center;
+    color: fff;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.steps .box img{
+    border-radius: 50%;
+    border: 2rem solid #FEBE10;
+    box-shadow: 0 .5rem .5rem #ed9729;
+    background-color: #0a2351;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.steps .box h3{
+    font-size: 2.5rem;
+    color: rgb(25, 24, 24);
+    padding: 1rem;
 }
 
 @keyframes float{
